@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+/* For background image */
+* {
+  box-sizing: border-box;
+  padding: 0px; 
+	margin: 0px; 
+}
+/* */
+
+
+.signup-area {
+  /* width: 100%;   */
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;  
+}
+
+.signup-area::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.signup-box {
+  width: 520px;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 52px;
+  background: -webkit-linear-gradient(top, black, #cb839f);
+  background: linear-gradient(top, black, #cb839f);
+}
+
+
+/* Just for the WELCOME BACK */
+.signup-form-title {
+  font-family: Poppins-Medium;
+  font-size: 28px;
+  color: white;
+  line-height: 1.3;
+  text-align: center;
+  padding: 28px 0px;
+  display: block;
+}
+/**/
+
+
+.input-box {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 30px;
+}
+
+.input-textarea {
+  display: block;
+  color: white;
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.1;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  padding: 0 0 0 40px;
+}
+
+.focus-input-textarea {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.focus-input-textarea::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  background: white;
+}
+
+.focus-input-textarea::after {
+  display: block;
+  content: attr(data-placeholder);
+  font-family: Material-Design-Iconic-Font;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+input::placeholder { color: white;}
+input:focus::placeholder { color: grey;}
+
+.input-textarea:focus {
+  padding-left: 5px;
+}
+
+.input-textarea:focus + .focus-input-textarea::before {
+  width: 100%;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.signup-area-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.signup-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 50px;
+
+  background: -webkit-linear-gradient(bottom, black, white);
+  background: linear-gradient(bottom, black, white);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.signup-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.signup-form-btn:hover {
+  color: white;
+}
+
+.signup-form-btn:hover:before {
+  opacity: 0;
+}
+
+.text-center {
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 1.3;
+}
+
+.forgotpwd {
+  color: white;
+}

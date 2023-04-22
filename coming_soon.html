@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <script src="./js/user.js" type="text/javascript"></script>
+
+  <title>Cinemax - Coming Soon</title>
+</head>
+
+<body onload="checkUsername()">
+
+  <header>
+
+    <!--Navigation bar-->
+    <div class="header-limiter">
+
+      <h1><a href="index.html">Cine<span>max</span></a></h1>
+
+      <nav>
+        <a href="ticketing.html" class="selected">Ticketing</a>
+        <a href="coming_soon.html">Coming Soon</a>
+        <a href="booking_status.html" class="selected">Booking status</a>
+      </nav>
+
+      <ul>
+        <li><a href="index.html" id="username"></a></li>
+        <li><a href="login.html" id="loginButton">Login</a></li>
+        <li><a href="signup.html" id="signupButton">Sign up</a></li>
+        <li><a href="index.html" id="logoutButton" onClick="logout()">Log out</a></li>
+      </ul>
+
+    </div>
+
+  </header>
+
+  <h1 class="page-heading">Upcoming Movies</h1>
+  <section class="section">
+    <div class="movie-center container">
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/c1.jpg" alt="">
+
+          <ul class="movie-link">
+            <li class="fake-link">Coming Soon</li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">Puff: Wonders of the Reef</p>
+          <p class="price">Release: 16 Dec 2021</p>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/c2.jpg" alt="">
+
+          <ul class="movie-link">
+            <li class="fake-link">Coming Soon</li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">The King's Man</p>
+          <p class="price">Release: 30 Dec 2021</p>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/c3.jpg" alt="">
+
+          <ul class="movie-link">
+            <li class="fake-link">Coming Soon</li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">SING 2</p>
+          <p class="price">Release: 29 Jan 2022</p>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/c4.jpg" alt="">
+
+          <ul class="movie-link">
+            <li class="fake-link">Coming Soon</li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">DC League of Super-Pets</p>
+          <p class="price">Release: 19 May 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/ticket.css" />
+	<script src="./js/user.js" type="text/javascript"></script>
+
+	<title>Cinemax - Movie Tickets Booking</title>
+</head>
+
+<body onload="checkUsername()" style="background-image: url('images/bkg1.jpg')">
+
+	<header>
+
+		<!--Navigation bar-->
+		<div class="header-limiter">
+
+			<h1><a href="index.html">Cine<span>max</span></a></h1>
+
+			<nav>
+				<a href="ticketing.html" class="selected">Ticketing</a>
+				<a href="coming_soon.html">Coming Soon</a>
+				<a href="booking_status.html" class="selected">Booking status</a>
+			</nav>
+
+			<ul>
+				<li><a href="index.html" id="username"></a></li>
+				<li><a href="login.html" id="loginButton">Login</a></li>
+				<li><a href="signup.html" id="signupButton">Sign up</a></li>
+				<li><a href="index.html" id="logoutButton" onClick="logout()">Log out</a></li>
+			</ul>
+
+		</div>
+
+
+	</header>
+
+	<div class="ticket-container">
+		<div class="ticket">
+			<img class="ticket-img" src="images/ticket.jpg" width=90%;>
+			<br />
+			<button class="DownloadBtn">
+				<a class="ticket-link" href="images/ticket.jpg" download>Download ticket to device</a>
+			</button>
+		</div>
+
+
+	</div>
+
+
+
+
+</body>
+
+</html>

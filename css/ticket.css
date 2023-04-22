@@ -1,0 +1,46 @@
+.ticket-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket {
+  width:800px;
+  margin-top: 150px;
+  padding: 10px;
+  background-color: rgb(59, 59, 59);
+  color:gray;
+}
+
+.ticket-img {
+  width: 100%;
+  display:block;
+}
+
+.DownloadBtn {
+  display: block;
+  padding: 0 10px;
+  background-color: white;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  margin: 0 auto 10px auto;
+  font-size: 14px;
+}
+
+.DownloadBtn:hover {
+  background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+}
+
+.ticket-link:link{
+  color: green;
+  text-decoration: none;
+}
+
+.ticket-link:visited {
+  color: chocolate;
+  text-decoration: none;
+}

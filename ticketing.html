@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/movie-trailer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <script src="./js/user.js" type="text/javascript"></script>
+
+  <title>Cinemax - Movie Tickets Booking</title>
+</head>
+
+<body onload="checkUsername()">
+
+  <header>
+
+    <!--Navigation bar-->
+    <div class="header-limiter">
+
+      <h1><a href="index.html">Cine<span>max</span></a></h1>
+
+      <nav>
+        <a href="ticketing.html" class="selected">Ticketing</a>
+        <a href="coming_soon.html">Coming Soon</a>
+        <a href="booking_status.html" class="selected">Booking status</a>
+      </nav>
+
+      <ul>
+        <li><a href="index.html" id="username"></a></li>
+        <li><a href="login.html" id="loginButton">Login</a></li>
+        <li><a href="signup.html" id="signupButton">Sign up</a></li>
+        <li><a href="index.html" id="logoutButton" onClick="logout()">Log out</a></li>
+      </ul>
+
+    </div>
+
+  </header>
+
+
+
+  <h1 class="page-heading">Ticketing Movies</h1>
+  <div id="popup">
+    <iframe id="popupFrame" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  
+  <section class="section">
+    <div class="movie-center container">
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/t1.jpg" alt="">
+          <ul class="movie-link">
+            <li><a href="movie-booking.html">Book Now</a></li>
+            <li><a href=# onclick="displayPopup('https://www.youtube.com/embed/pGi3Bgn7U5U')">Watch Trailer</a></li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">House of Gucci</p>
+          <p class="price">$120</p>
+        </div>
+      </div>
+
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/t2.jpg" alt="">
+
+          <ul class="movie-link">
+            <li><a href="movie-booking.html">Book Now</a></li>
+            <li><a href=# onclick="displayPopup('https://www.youtube.com/embed/x_me3xsvDgk')">Watch Trailer</a></li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">Eternals</p>
+          <p class="price">$130</p>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/t3.jpg" alt="">
+
+          <ul class="movie-link">
+            <li><a href="movie-booking.html">Book Now</a></li>
+            <li><a href=# onclick="displayPopup('https://www.youtube.com/embed/CaimKeDcudo')">Watch Trailer</a></li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">ENCANTO</p>
+          <p class="price">$80</p>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie-header">
+          <img src="./images/t4.jpg" alt="">
+
+          <ul class="movie-link">
+            <li><a href="movie-booking.html">Book Now</a></li>
+            <li><a href=# onclick="displayPopup('https://www.youtube.com/embed/xaG_5ZZ2PyM')">Watch Trailer</a></li>
+          </ul>
+        </div>
+        <div class="movie-footer">
+          <p class="movie-title">Ghostbusters: Afterlife</p>
+          <p class="price">$85</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+</body>
+<script src="js/movie-trailer.js" type="text/javascript"></script>
+
+</html>
